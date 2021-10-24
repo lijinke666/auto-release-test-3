@@ -1,3 +1,10 @@
+# [auto-release-test-test-module-a-v1.0.0-beta.2](https://github.com/lijinke666/auto-release-test-3/compare/auto-release-test-test-module-a-v1.0.0-beta.1...auto-release-test-test-module-a-v1.0.0-beta.2) (2021-10-24)
+
+
+### Features
+
+* 123 ([8e3a9e9](https://github.com/lijinke666/auto-release-test-3/commit/8e3a9e976611cfd49e2d7635033444825998eb90))
+
 # auto-release-test-test-module-a-v1.0.0-beta.1 (2021-10-24)
 
 
