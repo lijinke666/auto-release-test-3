@@ -1,0 +1,82 @@
+name: Release
+on:
+  push:
+    branches:
+      - master
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-18.04
+    if: "!contains(github.event.head_commit.message, '[ci skip]') && startsWith(github.event.head_commit.message , 'chore(release):')"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+
+      - name: Get yarn cache
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: yarn release
+
+      - name: Release success notify group
+        if: ${{ success() }}
+        uses: visiky/dingtalk-release-notify@main
+        with:
+          DING_TALK_TOKEN: ${{ secrets.DING_TALK_GROUP_TOKEN }}
+          notify_title: '🎉 {release_tag} 发布 🎉'
+          notify_body: '### { title }<hr /> ![preview](https://gw.alipayobjects.com/zos/antfincdn/WWAv%24ctWd/da21d637-2232-4a64-a994-c0227ab759e2.png) <hr /> { body } <hr />'
+          at_all: false
+
+      - name: Release success notify
+        if: ${{ success() }}
+        uses: zcong1993/actions-ding@master
+        with:
+          dingToken: ${{ secrets.DING_TALK_GROUP_TOKEN }}
+          body: |
+            {
+              "msgtype": "link",
+              "link": {
+                "title": "🎉 发布成功",
+                "text": "发布成功文本",
+                "messageUrl": "https://github.com/lijinke666/auto-release-test/releases",
+                "picUrl": "https://gw.alipayobjects.com/zos/antfincdn/WWAv%24ctWd/da21d637-2232-4a64-a994-c0227ab759e2.png"
+              }
+            }
+
+      - name: Release failed notify
+        if: ${{ failure() }}
+        uses: zcong1993/actions-ding@master
+        with:
+          dingToken: ${{ secrets.DING_TALK_GROUP_TOKEN }}
+          body: |
+            {
+              "msgtype": "link",
+              "link": {
+                "title": "🔊 发布失败",
+                "text": "发布失败文本",
+                "messageUrl": "https://github.com/lijinke666/auto-release-test/actions/workflows/release.yml",
+                "picUrl": "https://gw.alipayobjects.com/zos/antfincdn/WWAv%24ctWd/da21d637-2232-4a64-a994-c0227ab759e2.png"
+              }
+            }
