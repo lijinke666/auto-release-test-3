@@ -1,3 +1,10 @@
+# auto-release-test-test-module-b-v1.0.0-beta.1 (2021-10-24)
+
+
+### Bug Fixes
+
+* xx ([1e91241](https://github.com/lijinke666/auto-release-test-3/commit/1e91241a1ef7331ab7397d3f4997d8570dacd942))
+
 # [auto-release-module-b-v1.1.3](https://github.com/lijinke666/auto-release-test/compare/auto-release-module-b-v1.1.2...auto-release-module-b-v1.1.3) (2021-10-17)
 
 
