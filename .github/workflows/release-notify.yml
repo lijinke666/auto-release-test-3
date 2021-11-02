@@ -14,3 +14,4 @@ jobs:
           notify_title: '🎉 {release_tag} 发布 🎉'
           notify_body: '## { title }<hr /> ![preview](https://gw.alipayobjects.com/zos/antfincdn/WWAv%24ctWd/da21d637-2232-4a64-a994-c0227ab759e2.png) <hr /> { body } <hr />'
           at_all: false
+          enable_prerelease: true
