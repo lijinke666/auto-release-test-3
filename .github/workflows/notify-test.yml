@@ -1,0 +1,21 @@
+
+name: 🚀 Release Notify test
+on:
+  push:
+    branches:
+      - beta
+      - alpha
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - uses: visiky/dingtalk-release-notify@main
+        with:
+          DING_TALK_TOKEN: ${{ secrets.DING_TALK_GROUP_TOKEN }}
+          notify_title: '🎉 {release_tag} 发布 🎉'
+          notify_body: '## { title }<hr /> ![preview](https://gw.alipayobjects.com/zos/antfincdn/WWAv%24ctWd/da21d637-2232-4a64-a994-c0227ab759e2.png) <hr /> { body } <hr />'
+          at_all: ${{ github.ref == 'refs/heads/beta' || github.ref == 'refs/heads/alpha' }}
+          enable_prerelease: ${{ github.ref == 'refs/heads/beta' || github.ref == 'refs/heads/alpha' }}
