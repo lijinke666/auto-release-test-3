@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - beta
-      - release
+      - 1.x
 
 jobs:
   release:
