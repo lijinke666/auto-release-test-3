@@ -1,3 +1,15 @@
+# [auto-release-test-test-module-a-v1.1.0](https://github.com/lijinke666/auto-release-test-3/compare/auto-release-test-test-module-a-v1.0.1...auto-release-test-test-module-a-v1.1.0) (2021-11-22)
+
+
+### Bug Fixes
+
+* module-a fix 11 ([8127ab9](https://github.com/lijinke666/auto-release-test-3/commit/8127ab98144322b97b912534f70c27f70ccc7ced))
+
+
+### Features
+
+* module-a feast 1 ([f56c69b](https://github.com/lijinke666/auto-release-test-3/commit/f56c69b49964faa3fa83094ff256afefb950519b))
+
 # [auto-release-test-test-module-a-v1.0.1](https://github.com/lijinke666/auto-release-test-3/compare/auto-release-test-test-module-a-v1.0.0...auto-release-test-test-module-a-v1.0.1) (2021-11-22)
 
 
