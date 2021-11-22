@@ -1,5 +1,10 @@
 module.exports = {
-  branch: 'release',
+  branches: [
+    'release',
+    { name: 'beta', prerelease: true },
+    { name: 'appha', prerelease: true },
+    { name: 'next', prerelease: true },
+  ],
   extends: 'semantic-release-monorepo',
   plugins: [
     '@semantic-release/commit-analyzer',
@@ -8,7 +13,7 @@ module.exports = {
     [
       '@semantic-release/git',
       {
-        message: 'chore(release): 🤖 ${nextRelease.version} [ci skip] \n\n ${nextRelease.notes}',
+        message: 'chore(release): 🤖 ${nextRelease.version} [ci skip]',
       },
     ],
     '@semantic-release/npm',
