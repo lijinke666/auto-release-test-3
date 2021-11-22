@@ -1,3 +1,17 @@
+# auto-release-test-test-module-a-v1.0.0 (2021-11-22)
+
+
+### Bug Fixes
+
+* test ([1424976](https://github.com/lijinke666/auto-release-test-3/commit/1424976294bc06d60479396827a52752e5da6394))
+* test fix 1121 ([43d1e12](https://github.com/lijinke666/auto-release-test-3/commit/43d1e1256556f55fb513fbf5c8402bb0beb7ed41))
+* xx ([1e91241](https://github.com/lijinke666/auto-release-test-3/commit/1e91241a1ef7331ab7397d3f4997d8570dacd942))
+
+
+### Features
+
+* 123 ([8e3a9e9](https://github.com/lijinke666/auto-release-test-3/commit/8e3a9e976611cfd49e2d7635033444825998eb90))
+
 # auto-release-test-test-module-a-v1.0.0-beta.1 (2021-10-24)
 
 
