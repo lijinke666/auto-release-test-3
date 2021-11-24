@@ -1,3 +1,10 @@
+# [auto-release-test-test-module-a-v1.1.3](https://github.com/lijinke666/auto-release-test-3/compare/auto-release-test-test-module-a-v1.1.2...auto-release-test-test-module-a-v1.1.3) (2021-11-24)
+
+
+### Bug Fixes
+
+* 修复 1.1.3 ([5ff7edf](https://github.com/lijinke666/auto-release-test-3/commit/5ff7edf692552526f3af86c28ca5be320bbc9111))
+
 # auto-release-test-test-module-a-v1.0.0 (2021-11-24)
 
 
