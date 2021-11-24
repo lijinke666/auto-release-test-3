@@ -2,7 +2,7 @@ module.exports = {
   branches: [
     'master',
     { name: 'beta', prerelease: true },
-    { name: 'appha', prerelease: true },
+    { name: 'alpha', prerelease: true },
     { name: 'next', prerelease: true },
   ],
   extends: 'semantic-release-monorepo',
@@ -13,7 +13,6 @@ module.exports = {
     [
       '@semantic-release/git',
       {
-        assets: ['CHANGELOG.md', 'package.json'],
         message: 'chore(release): 🤖 ${nextRelease.gitTag} [skip ci]',
       },
     ],
