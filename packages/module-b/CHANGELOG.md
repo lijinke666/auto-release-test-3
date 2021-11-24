@@ -8,6 +8,16 @@
 * test ([1424976](https://github.com/lijinke666/auto-release-test-3/commit/1424976294bc06d60479396827a52752e5da6394))
 * update ([deb5987](https://github.com/lijinke666/auto-release-test-3/commit/deb5987487deb3a033099ded4ca8e0697ccd5507))
 
+# auto-release-test-test-module-b-v1.0.0 (2021-11-24)
+
+
+### Bug Fixes
+
+* module-a module-b fix ([f03f6ed](https://github.com/lijinke666/auto-release-test-3/commit/f03f6edecac84f625aaca5600144e39c4d0d54a6))
+* **module-b:** 11 ([1774556](https://github.com/lijinke666/auto-release-test-3/commit/177455624518b2111ce614b2d0f66d7a47bcba0f))
+* test ([1424976](https://github.com/lijinke666/auto-release-test-3/commit/1424976294bc06d60479396827a52752e5da6394))
+* update ([deb5987](https://github.com/lijinke666/auto-release-test-3/commit/deb5987487deb3a033099ded4ca8e0697ccd5507))
+
 # [auto-release-module-b-v1.1.3](https://github.com/lijinke666/auto-release-test/compare/auto-release-module-b-v1.1.2...auto-release-module-b-v1.1.3) (2021-10-17)
 
 
