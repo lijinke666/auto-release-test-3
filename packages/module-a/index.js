@@ -4,7 +4,7 @@ module.exports = {
   },
   fix() {
     console.log(
-      'module a bug fix, 并且修改了父级的一些文件111 sdfsdfds122.2.7',
+      'module a bug fix, 并且修改了父级的一些文件111 sdfsdfds122.2.71111',
     );
   },
 };
