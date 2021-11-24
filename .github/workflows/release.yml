@@ -41,6 +41,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GIT_AUTHOR_NAME: "@test-name"
+          GIT_COMMITTER_NAME: "@test-commit-name"
+
         run: yarn release
 
       - name: Release success notify group
