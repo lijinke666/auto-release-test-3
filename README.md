@@ -14,4 +14,4 @@
 
 ### 测试场景
 
-master 分支正常迭代提交, merge 到 release 分支 发布
+master 保护分支, 使用 `persist-credentials: false` 能否在 CI 正常发布并提交 changelog
