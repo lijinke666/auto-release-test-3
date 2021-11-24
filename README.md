@@ -14,4 +14,4 @@
 
 ### 测试场景
 
-master 保护分支, 使用 `persist-credentials: false` 能否在 CI 正常发布并提交 changelog
+`master` 为保护分支, 使用 `persist-credentials: false` 能否在 CI 正常发布并提交 changelog
