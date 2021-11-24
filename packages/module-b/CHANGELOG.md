@@ -1,3 +1,11 @@
+# [auto-release-test-test-module-b-v1.0.2](https://github.com/lijinke666/auto-release-test-3/compare/auto-release-test-test-module-b-v1.0.1...auto-release-test-test-module-b-v1.0.2) (2021-11-24)
+
+
+### Bug Fixes
+
+* module-a module-b fix ([f03f6ed](https://github.com/lijinke666/auto-release-test-3/commit/f03f6edecac84f625aaca5600144e39c4d0d54a6))
+* update ([deb5987](https://github.com/lijinke666/auto-release-test-3/commit/deb5987487deb3a033099ded4ca8e0697ccd5507))
+
 # [auto-release-test-test-module-b-v1.0.1](https://github.com/lijinke666/auto-release-test-3/compare/auto-release-test-test-module-b-v1.0.0...auto-release-test-test-module-b-v1.0.1) (2021-11-22)
 
 
