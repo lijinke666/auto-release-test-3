@@ -4,6 +4,7 @@ on:
     branches:
       - beta
       - 1.x
+      - release
 
 jobs:
   release:
