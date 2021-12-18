@@ -24,6 +24,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Checkout branch
+        run: |
+          git checkout -b chore-sync
+
       - name: Install dependencies
         run: yarn
 
