@@ -33,7 +33,7 @@ jobs:
 
       - name: Push lock
         run: |
-          mkdir test
+          echo 'const a = 1' > test.js
           git add .
           git commit -m "chore: 🤖 auto sync site s2 lock and changelog [skip ci]" --no-verify
           git push origin chore-sync --no-verify
