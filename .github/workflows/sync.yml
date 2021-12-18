@@ -24,10 +24,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Checkout branch
-        run: |
-          git checkout -b chore-sync
-
       - name: Install dependencies
         run: yarn
 
@@ -41,6 +37,6 @@ jobs:
       # 使用官方的 github cli 便捷的创建 pr
       - name: Create PR
         run: |
-          gh pr create --fill --base master
+          gh pr create --fill
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
