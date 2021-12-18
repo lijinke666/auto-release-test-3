@@ -31,11 +31,9 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Sync Locale site @antv/s2 and @antv/s2-react lock
-        run: yarn site:sync-s2-lock
-
       - name: Push lock
         run: |
+          mkdir test
           git add .
           git commit -m "chore: 🤖 auto sync site s2 lock and changelog [skip ci]" --no-verify
           git push origin chore-sync --no-verify
