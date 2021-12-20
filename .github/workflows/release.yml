@@ -39,10 +39,10 @@ jobs:
 
       - name: Release
         env:
-          GITHUB_TOKEN: ${{ secrets.S2_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.JINKE_GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GIT_AUTHOR_NAME: "@test-name"
-          GIT_COMMITTER_NAME: "@test-commit-name"
+          GIT_AUTHOR_NAME: '@test-name'
+          GIT_COMMITTER_NAME: '@test-commit-name'
 
         run: yarn release
 
