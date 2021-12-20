@@ -1,10 +1,15 @@
 name: 🔁 Sync
 
-on: [push]
+on:
+  workflow_run:
+    workflows: ['🚀 Auto Release']
+    types:
+      - completed
 
 jobs:
   sync-site-lock:
     runs-on: ubuntu-latest
+    if: github.event.workflow_run.conclusion == 'success'
     steps:
       - uses: actions/checkout@v2
         with:
@@ -41,6 +46,6 @@ jobs:
       # 使用官方的 github cli 便捷的创建 pr
       - name: Create PR
         run: |
-          gh pr create --title "chore: 🤖 auto sync site s2 lock and changelog [skip ci]" --body "🤖"
+          gh pr create --title "chore: 🤖 auto sync site s2 lock and changelog [skip ci]" --body "🤖 Auto create by [🔁 Sync Site S2 Lock And Changelog With PR](https://github.com/antvis/S2/blob/master/.github/workflows/sync-site-lock-changelog-with-pr.yml)"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
