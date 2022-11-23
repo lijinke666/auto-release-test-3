@@ -1,6 +1,6 @@
 module.exports = {
   test() {
-    console.log('module A 111111');
+    console.log('module A 1111111');
   },
   fix() {
     console.log(

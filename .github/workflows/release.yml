@@ -4,6 +4,8 @@ on:
     branches:
       - beta
       - master
+      - next
+      - alpha
 
 jobs:
   release:
