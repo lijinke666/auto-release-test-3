@@ -1,3 +1,10 @@
+# [auto-release-test-test-module-a-v1.2.0-next.1](https://github.com/lijinke666/auto-release-test-3/compare/auto-release-test-test-module-a-v1.1.6-next.1...auto-release-test-test-module-a-v1.2.0-next.1) (2022-11-23)
+
+
+### Features
+
+* v2 测试版发布 \n\n BREAKING CHANGE ([8415774](https://github.com/lijinke666/auto-release-test-3/commit/841577458ecfaabd9aa8143b2e7d05dd763c8666))
+
 # [auto-release-test-test-module-a-v1.1.6-next.1](https://github.com/lijinke666/auto-release-test-3/compare/auto-release-test-test-module-a-v1.1.5...auto-release-test-test-module-a-v1.1.6-next.1) (2022-11-23)
 
 
