@@ -1,6 +1,6 @@
 module.exports = {
   test() {
-    console.log('module A 1111111');
+    console.log('module A 2.0.0-next.0');
   },
   fix() {
     console.log(
