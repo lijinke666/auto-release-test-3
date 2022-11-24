@@ -1,9 +1,10 @@
 module.exports = {
   branches: [
     'master',
-    { name: 'beta', prerelease: true },
-    { name: 'alpha', prerelease: true },
-    { name: 'next', prerelease: true },
+    { name: 'beta', channel: 'beta', prerelease: true },
+    { name: 'alpha', channel: 'alpha', prerelease: true },
+    { name: 'next', channel: 'next' },
+    { name: 'next-major', channel: 'next', prerelease: true },
   ],
   extends: 'semantic-release-monorepo',
   plugins: [
