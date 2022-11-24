@@ -1,6 +1,6 @@
 module.exports = {
   test() {
-    console.log('module A 1111111');
+    console.log('module A 1111111 next.1 BREAKING CHANGE');
   },
   fix() {
     console.log(
