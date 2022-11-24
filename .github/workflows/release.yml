@@ -5,6 +5,7 @@ on:
       - beta
       - master
       - next
+      - next-major
       - alpha
 
 jobs:
